@@ -1,0 +1,10 @@
+body{
+    background-color: #c03535;
+    height: 550px;
+    width: 300;
+} 
+.image{
+    height: 128;
+    width: 128;
+    margin-left: 75px;
+}
