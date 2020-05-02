@@ -2,9 +2,14 @@ body{
     background-color: #c03535;
     height: 550px;
     width: 300;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
 } 
 .image{
     height: 128;
     width: 128;
     margin-left: 75px;
+}
+button{
+    background-color: #982727;
 }
