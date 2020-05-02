@@ -1,9 +1,10 @@
 body{
     background-color: #c03535;
-    height: 550px;
+    height: 400px;
     width: 300;
     font-family: 'Righteous', cursive;
     color: #ffffff;
+    
 } 
 .image{
     height: 128;
@@ -13,6 +14,13 @@ body{
 button{
     background-color: #982727;
 }
- .link{
+.link{
     color: #ffffff;  
  }
+
+.bouton{
+    margin-left: 290px;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+}
