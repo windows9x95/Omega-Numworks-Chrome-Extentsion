@@ -2,7 +2,11 @@
     "name": "Omega Extension",
     "description" : "All usefulls links related to Omega-Numworks",
     "version": "1.0",
-    "permissions": ["storage","tabs"],
+    "permissions": [
+      "storage",
+      "tabs",
+      "<all_urls>"
+    ],
     "manifest_version": 2,
     "browser_action": {
       "default_popup": "hello.html",
