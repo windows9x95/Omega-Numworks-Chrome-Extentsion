@@ -1,7 +1,8 @@
 {
-    "name": "Omega Extensions",
+    "name": "Omega Extension",
     "description" : "All usefulls links related to Omega-Numworks",
     "version": "1.0",
+    "permissions": ["storage","tabs"],
     "manifest_version": 2,
     "browser_action": {
       "default_popup": "hello.html",
@@ -9,5 +10,16 @@
     },
     "icons": {
         "512": "img/Omega-Logo.png"
-    }
-  }
+    },
+    
+    "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+A",
+            "mac": "MacCtrl+Shift+A"
+          },
+          "description": "Ouvre l'extention Omega"
+        }
+      }
+      
+}
