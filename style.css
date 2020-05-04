@@ -1,6 +1,6 @@
 body{
     background-color: #c03535;
-    height: 400px;
+    height: 700px;
     width: 300;
     font-family: 'Righteous', cursive;
     color: #ffffff;
@@ -24,6 +24,6 @@ button{
     width: 30px;
     opacity: 0;
 }
-footer{
-	margin-left: 75px;
+iframe{
+    overflow: hidden;
 }
