@@ -10,7 +10,7 @@
   ],
   "manifest_version": 2,
   "browser_action": {
-    "default_popup": "hello.html",
+    "default_popup": "popup.html",
     "default_icon": "img/Omega-Logo.png"
   },
   "icons": {

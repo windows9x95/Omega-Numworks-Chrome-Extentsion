@@ -12,18 +12,24 @@ body{
     margin-left: 75px;
 }
 button{
-    background-color: #982727;
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+    border-radius: 8px;
 }
 .link{
     color: #ffffff;  
+    text-decoration: none;
+    transition: all 0.4s ease;
  }
 
-.bouton{
-    margin-left: 290px;
-    height: 30px;
-    width: 30px;
-    opacity: 0;
+.link:hover {
+    background-color:#A51C30;
 }
 iframe{
     overflow: hidden;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 5px;
 }
