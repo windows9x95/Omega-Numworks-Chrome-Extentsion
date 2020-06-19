@@ -1,8 +1,18 @@
 @echo off
 echo Welcome to this Auto-Installer of the Omega Extension for Chromium based web browser (BETA Feature)
-echo For now only Google Chrome and Chromium 
-echo If there are missing please download them at following link
-echo https://github.com/hectornuss/Omega-Numworks-Chrome-Extentsion
+echo For now only Google Chrome, Chromium and Microsoft Edge (Chromium based) are supported.
+echo If the Installation didn't work, please execute the script as administrator
+echo I'll download extension for you.
+echo Note : The download fonction is avalaible if you have wget installed
+echo REPOS : https://github.com/hectornuss/Omega-Numworks-Chrome-Extentsion
+pause
+mkdir img
+cd img
+wget https://github.com/hectornuss/Omega-Numworks-Chrome-Extentsion/raw/master/img/Omega-Logo.png
+cd ..
+wget https://raw.githubusercontent.com/hectornuss/Omega-Numworks-Chrome-Extentsion/master/manifest.json
+wget https://raw.githubusercontent.com/hectornuss/Omega-Numworks-Chrome-Extentsion/master/popup.html
+wget https://raw.githubusercontent.com/hectornuss/Omega-Numworks-Chrome-Extentsion/master/style.css
 pause
 if exist %userprofile%\AppData\Local\Chrome  (
      echo Chrome detected, Installing Omega Extension to Chrome
@@ -37,4 +47,12 @@ if exist %userprofile%\AppData\Local\Chromium  (
      %userprofile%\AppData\Local\Chromium\Application\chrome.exe --user-data-dir=%temp% --load-extension=%userprofile%\AppData\Local\Chromium\Application\Omega
      echo Sucessfully Installed the extension to Chromium
 )
+echo Removing temporary files...
+rm popup.html
+rm style.css
+rm manifest.json
+cd img
+rm Omega-Logo.png
+cd ..
+echo Done.
 pause
