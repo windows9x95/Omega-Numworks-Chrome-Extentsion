@@ -1,9 +1,9 @@
 @echo off
 echo Welcome to this Auto-Installer of the Omega Extension for Chromium based web browser (BETA Feature)
-echo For now only Google Chrome, Chromium and Microsoft Edge (Chromium based) are supported.
+echo For now only Google Chrome and Chromium are supported.
 echo If the Installation didn't work, please execute the script as administrator
 echo I'll download extension for you.
-echo Note : The download fonction is avalaible if you have wget installed
+echo Note : The download fonction need wget installed, before run please ensure wget is installed
 echo REPOS : https://github.com/hectornuss/Omega-Numworks-Chrome-Extentsion
 pause
 mkdir img
